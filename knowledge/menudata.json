@@ -1,0 +1,17 @@
+{
+    "Burgers": [
+      { "name": "Zinger Cheeseburger", "id": 101, "price": "$5.99"},
+      { "name": "Mega Zinger Burger", "id": 102, "price": "$4.99"},
+      { "name": "Bacon Zinger Burger", "id": 103, "price": "$6.99"},
+      { "name": "Libertine Burger", "id": 104, "price": "$7.99"},
+      { "name": "3 Zingers Deal", "id": 105, "price": "$19.99"},
+      { "name": "4 Zingers Deal", "id": 106, "price": "$24.99"}
+    ],
+    "Pizza": [
+      { "name": "Cheese Pizza", "id": 201, "price": "$11.99"},
+      {"name": "Chicken Fajita Pizza","id": 202,"price" : "$12.99"},
+      {"name": "Chicken Supreme Pizza","id": 203,"price" : "$13.99"},
+      {"name": "Chicken Tikka Pizza","id": 204,"price" : "$14.99"},
+      {"name": "Chicken Malai Boti Pizza","id": 205,"price" : "$15.99"}
+    ]
+}

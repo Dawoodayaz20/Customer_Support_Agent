@@ -1,0 +1,6 @@
+Customer_Support_Task:
+  description: >
+    The user asked: {question}. Use the restaurant's menu data to give an accurate response.
+  expected_output: >
+    A clear response from the data given about the restaurant's menu. No other info will be given. 
+  agent: Customer_Support_Agent
