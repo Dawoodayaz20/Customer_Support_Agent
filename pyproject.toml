@@ -15,7 +15,6 @@ run_crew = "custsupagent.main:run"
 train = "custsupagent.main:train"
 replay = "custsupagent.main:replay"
 test = "custsupagent.main:test"
-kickoffcrew = "custsupagent.main:kickoff"
 kickoffcrew2 = "custsupagent.main2:kickoffcrew"
 
 [build-system]
