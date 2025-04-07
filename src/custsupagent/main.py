@@ -21,4 +21,4 @@ class QuestionRequest(BaseModel):
 @app.post("/ask")
 def ask_question(request: QuestionRequest):
     response = Crew.crew().kickoff(inputs={"question": request.question})
-    return {"response": response.raw}
+    return response.raw

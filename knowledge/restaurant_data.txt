@@ -1,0 +1,4 @@
+- Buns and Burger is an online-only fast food restaurant.
+- It does not have a physical location.
+- Known for burgers and pizzas.
+- Customers can order online and add items to a cart.

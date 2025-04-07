@@ -1,4 +1,5 @@
 from crewai.knowledge.source.json_knowledge_source import JSONKnowledgeSource
+from crewai.knowledge.source.text_file_knowledge_source import TextFileKnowledgeSource
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 import os
@@ -7,9 +8,9 @@ from dotenv import load_dotenv
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 
-llm = LLM(model="gemini/gemini-1.5-flash", temperature=0)
+llm = LLM(model="gemini/gemini-2.0-flash", temperature=0)
 
-google_embedder = embedder={
+google_embedder = {
     "provider": "google",
     "config": {
         "model": "models/text-embedding-004",
@@ -17,9 +18,17 @@ google_embedder = embedder={
     }
 }
 
+content = "Buns and Burger restaurant is a fast food restaurant.It is an online restaurant."
+
 menu_data = JSONKnowledgeSource(
     file_paths=["menudata.json"]
 )
+
+restaurants_info = TextFileKnowledgeSource(
+    file_path="restaurant_data.txt"
+)
+# print(restaurants_info)
+
 
 @CrewBase
 class RestaurantCrew():
@@ -52,6 +61,6 @@ class RestaurantCrew():
             tasks=self.tasks, # Automatically created by the @task decorator
             process=Process.sequential,
             verbose=True,
-            knowledge_sources=[menu_data],
+            knowledge_sources=[menu_data, restaurants_info],
             embedder=google_embedder,
         )
