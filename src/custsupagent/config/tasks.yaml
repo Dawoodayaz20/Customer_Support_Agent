@@ -2,5 +2,6 @@ Customer_Support_Task:
   description: >
     The user asked: {question}. Use the data given to generate an accurate response.
   expected_output: >
-    Generate a clear response from the information given about the restaurant and its menu. If needed, insert a little emojis in response to make it look appealing.
+    Generate a clear response from the information given about the restaurant and its menu. 
+    If needed, insert a little emojis, Give a response in markdown style.
   agent: Customer_Support_Agent
