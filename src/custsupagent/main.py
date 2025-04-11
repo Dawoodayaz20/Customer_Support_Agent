@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
-from crew1 import RestaurantCrew
+from src.custsupagent.crew1 import RestaurantCrew
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
