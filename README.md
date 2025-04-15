@@ -1,6 +1,6 @@
-# Restaurant Support Agent Crew
+# Customer Support Agent Crew
 
-Welcome to the Restaurant Support Agent Crew project, powered by [crewAI].
+Welcome to the Customer Support Agent Crew project, powered by [crewAI].
 
 ## Installation
 
